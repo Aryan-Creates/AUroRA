@@ -1,0 +1,50 @@
+:root {
+  /* Colors strictly matching DESIGN-renault.md */
+  --color-primary: #ffed00;
+  --color-primary-deep: #e6d200;
+  --color-on-primary: #000000;
+  --color-ink: #000000;
+  --color-body: #222222;
+  --color-charcoal: #333333;
+  --color-mute: #666666;
+  --color-ash: #8a8a8a;
+  --color-stone: #c4c4c4;
+  --color-on-dark: #ffffff;
+  --color-on-dark-mute: rgba(255, 255, 255, 0.72);
+  --color-canvas: #ffffff;
+  --color-surface-soft: #f7f7f7;
+  --color-surface-card: #ffffff;
+  --color-surface-dark: #000000;
+  --color-surface-deep: #111111;
+  --color-hairline: #f2f2f2;
+  --color-hairline-strong: #000000;
+  --color-divider-dark: rgba(255, 255, 255, 0.16);
+  --color-badge-new: #ffed00;
+  --color-link: #0000ee;
+  --color-error: #be6464;
+  --color-warning: #f0ad4e;
+  --color-success: #8dc572;
+  --color-info: #337ab7;
+
+  /* Corner radius scale */
+  --radius-none: 0px;
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-pill: 46px;
+  --radius-full: 9999px;
+
+  /* Spacing scale */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+  --space-xxxl: 40px;
+  --space-section: 80px;
+
+  /* Max container width */
+  --max-content-width: 1440px;
+}

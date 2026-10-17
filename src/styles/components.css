@@ -1,0 +1,300 @@
+/* Typography utilities exactly matching DESIGN-renault.md specifications */
+
+.type-display-xl {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.type-display-lg {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.type-display-md {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.type-heading-lg {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.type-heading-md {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.type-heading-sm {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0;
+}
+
+.type-subtitle {
+  font-size: 19.2px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.type-body-lg {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.type-body-md {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.type-body-sm {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.57;
+  letter-spacing: 0;
+}
+
+.type-button-lg {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0;
+}
+
+.type-button-md {
+  font-size: 14.4px;
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0.144px;
+}
+
+.type-button-sm {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.13px;
+}
+
+.type-caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.type-overline {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+/* Base Component classes from DESIGN-renault.md */
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  font-size: 14.4px;
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0.144px;
+  border-radius: var(--radius-xs);
+  padding: 14px 24px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #f5e400;
+}
+
+.btn-primary:active {
+  background-color: var(--color-primary-deep);
+}
+
+.btn-primary:disabled {
+  background-color: var(--color-stone);
+  color: var(--color-mute);
+  cursor: not-allowed;
+}
+
+.btn-secondary-dark {
+  background-color: var(--color-surface-dark);
+  color: var(--color-on-dark);
+  font-size: 14.4px;
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0.144px;
+  border-radius: var(--radius-xs);
+  padding: 14px 24px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.15s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-secondary-dark:hover {
+  background-color: var(--color-charcoal);
+}
+
+.btn-outline-dark {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-size: 14.4px;
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0.144px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--color-hairline-strong);
+  padding: 13px 23px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--color-surface-soft);
+}
+
+.btn-outline-light {
+  background-color: var(--color-surface-dark);
+  color: var(--color-on-dark);
+  font-size: 14.4px;
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0.144px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--color-on-dark);
+  padding: 13px 23px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.btn-pill {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.13px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-hairline-strong);
+  padding: 8px 16px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.btn-pill:hover, .btn-pill.active {
+  background-color: var(--color-surface-dark);
+  color: var(--color-on-dark);
+  border-color: var(--color-surface-dark);
+}
+
+.btn-icon-square {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--color-hairline-strong);
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-icon-square:hover {
+  background-color: var(--color-surface-soft);
+}
+
+/* Text Input: borderless top/sides with 1px bottom border hairline-strong per DESIGN-renault.md */
+.text-input-field {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  border-radius: var(--radius-none);
+  border: none;
+  border-bottom: 1px solid var(--color-hairline-strong);
+  padding: 12px 16px;
+  height: 48px;
+  width: 100%;
+  outline: none;
+  transition: border-bottom-width 0.1s ease, border-color 0.15s ease;
+}
+
+.text-input-field:focus {
+  border-bottom: 2px solid var(--color-ink);
+  padding-bottom: 11px;
+}
+
+.text-input-field::placeholder {
+  color: var(--color-ash);
+}
+
+/* Badges */
+.badge-yeni {
+  background-color: var(--color-badge-new);
+  color: var(--color-on-primary);
+  font-size: 14.4px;
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0.144px;
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+}
