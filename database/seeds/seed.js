@@ -1,5 +1,5 @@
 /**
- * Seed Script for HACKVIBE Backend
+ * Seed Script for AUroRA Backend
  * Seeds initial users (Customer, Provider, Admin), 6 comprehensive businesses, services, and bookings into MongoDB.
  */
 
@@ -55,7 +55,7 @@ const seedDatabase = async () => {
       role: 'admin',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
       phone: '+91 98450 08888',
-      address: 'HACKVIBE Platform HQ, UB City, Bengaluru',
+      address: 'AUroRA Platform HQ, UB City, Bengaluru',
       status: 'active',
     });
 

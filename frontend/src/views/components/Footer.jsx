@@ -27,7 +27,7 @@ export const Footer = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-[19px] tracking-tight leading-none text-white">
-                  HACKVIBE
+                  AUroRA
                 </span>
                 <span className="text-[9px] font-bold tracking-[0.2em] text-primary uppercase leading-tight mt-0.5">
                   LOCAL SERVICES
@@ -98,14 +98,14 @@ export const Footer = () => {
               Quality &amp; Trust Reports
             </Link>
             <span className="text-[13px] text-on-dark-mute mt-2">
-              Phase 1 Frontend Prototype • HACKVIBE Round 1
+              Phase 1 Frontend Prototype • AUroRA
             </span>
           </div>
         </div>
 
         {/* Separator & Bottom Row */}
         <div className="pt-8 border-t border-divider-dark flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-on-dark-mute">
-          <p>© {new Date().getFullYear()} HACKVIBE Platform. Built strictly with the Renault design system specification.</p>
+          <p>© {new Date().getFullYear()} AUroRA Platform. Built strictly with the Renault design system specification.</p>
           <div className="flex items-center gap-6">
             <span className="hover:text-white cursor-pointer">Privacy Charter</span>
             <span className="hover:text-white cursor-pointer">Terms of Service</span>

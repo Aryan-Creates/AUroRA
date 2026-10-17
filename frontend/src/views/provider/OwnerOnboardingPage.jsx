@@ -26,11 +26,15 @@ import { Button } from '../components/Button.jsx';
 import { Input, Select, Textarea } from '../components/Input.jsx';
 import { businessRepository } from '../../repositories/businessRepository.js';
 import { serviceRepository } from '../../repositories/serviceRepository.js';
-import { selectCurrentUser } from '../../features/auth/authSlice.js';
+import { userRepository } from '../../repositories/userRepository.js';
+import { selectCurrentUser, updateProfile } from '../../features/auth/authSlice.js';
 import { businessController } from '../../controllers/businessController.js';
+import { providerController } from '../../controllers/providerController.js';
+import { useDispatch } from 'react-redux';
 
 export const OwnerOnboardingPage = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const currentUser = useSelector(selectCurrentUser);
 
   const [step, setStep] = useState(1);
@@ -145,10 +149,20 @@ export const OwnerOnboardingPage = () => {
         isPopular: true,
       });
 
-      // Reload businesses so discovery updates immediately
-      businessController.loadBusinesses();
+      // 3. Update logged-in user profile with new provider role & business reference
+      if (currentUser) {
+        userRepository.update(currentUser.id, {
+          role: 'provider',
+          businessId: newBusiness.id,
+        });
+        dispatch(updateProfile({ role: 'provider', businessId: newBusiness.id }));
+      }
 
-      // Navigate to owner dashboard
+      // 4. Reload businesses and provider dashboard data
+      businessController.loadBusinesses();
+      providerController.loadProviderData(newBusiness.providerId);
+
+      // 5. Navigate to owner dashboard
       navigate('/owner/dashboard');
     } catch (err) {
       setError(err.message || 'Failed to complete onboarding. Please try again.');
@@ -165,7 +179,7 @@ export const OwnerOnboardingPage = () => {
             Establishment Onboarding
           </span>
           <h1 className="text-[32px] md:text-[36px] font-bold text-ink leading-tight1 mb-3">
-            Register Your Business On HACKVIBE
+            Register Your Business On AUroRA
           </h1>
           <p className="text-[14.5px] text-mute leading-relaxed">
             Join our curated network of premium salons, spas, gyms, and grooming parlours. Start receiving verified, real-time appointments.

@@ -144,7 +144,7 @@ export const AuthPage = ({ defaultMode }) => {
         <div className="bg-canvas border border-hairline-strong p-6 md:p-8 rounded-none shadow-md">
           <div className="flex items-center justify-between border-b border-hairline pb-4 mb-6">
             <h2 className="text-[24px] font-bold text-ink leading-tight1">
-              {isRegister ? 'Create Account' : 'Sign In to HACKVIBE'}
+              {isRegister ? 'Create Account' : 'Sign In to AUroRA'}
             </h2>
             <button
               type="button"

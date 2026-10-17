@@ -1,6 +1,6 @@
 # AUroRA — Local Services Discovery & Booking Platform
 
-**HACKVIBE Round 1 | System Architecture & Folder Separation**
+**AUroRA | System Architecture & Folder Separation**
 
 AUroRA is a full-stack local services discovery and appointment booking platform designed according to the **Renault Design Specification (`DESIGN-renault.md`)**.
 

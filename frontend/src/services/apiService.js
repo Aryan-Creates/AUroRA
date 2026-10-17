@@ -1,5 +1,5 @@
 /**
- * Centralized API Client Service for HACKVIBE
+ * Centralized API Client Service for AUroRA
  * Integrates with the Express REST API backend when active,
  * with configurable base URL and cookie/credential management.
  */

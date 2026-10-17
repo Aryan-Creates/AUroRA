@@ -67,7 +67,7 @@ export const Navbar = () => {
   return (
     <header className="sticky top-0 z-40 w-full h-[60px] bg-canvas border-b border-hairline transition-all">
       <div className="max-w-content mx-auto h-full px-4 sm:px-6 md:px-8 flex items-center justify-between">
-        {/* Left: HACKVIBE Diamond Brand Logo */}
+        {/* Left: AUroRA Diamond Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group text-decoration-none">
           {/* Geometric flat diamond mark */}
           <div className="relative w-8 h-8 flex items-center justify-center">
@@ -78,7 +78,7 @@ export const Navbar = () => {
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-[18px] tracking-tight leading-none text-ink">
-              HACKVIBE
+              AUroRA
             </span>
             <span className="text-[9px] font-bold tracking-[0.2em] text-mute uppercase leading-tight mt-0.5">
               LOCAL SERVICES

@@ -96,6 +96,37 @@ class BusinessRepository {
     return results;
   }
 
+  create(businessData) {
+    const raw = storageService.get(STORAGE_KEY, MOCK_BUSINESSES);
+    const id = businessData.id || `biz-${Date.now()}`;
+    const slug = businessData.slug || (businessData.name ? businessData.name.toLowerCase().replace(/[^a-z0-9]+/g, '-') : id);
+    const newBusiness = {
+      id,
+      slug,
+      rating: 5.0,
+      reviewCount: 0,
+      status: 'approved',
+      isFeatured: false,
+      isVerified: true,
+      badges: ['New Partner', 'Verified Provider'],
+      images: businessData.coverImage ? [businessData.coverImage] : [],
+      ...businessData,
+    };
+    raw.unshift(newBusiness);
+    storageService.set(STORAGE_KEY, raw);
+    return new Business(newBusiness);
+  }
+
+  delete(id) {
+    const raw = storageService.get(STORAGE_KEY, MOCK_BUSINESSES);
+    const filtered = raw.filter((b) => b.id !== id);
+    if (filtered.length !== raw.length) {
+      storageService.set(STORAGE_KEY, filtered);
+      return true;
+    }
+    return false;
+  }
+
   update(id, updates) {
     const raw = storageService.get(STORAGE_KEY, MOCK_BUSINESSES);
     const index = raw.findIndex((b) => b.id === id);

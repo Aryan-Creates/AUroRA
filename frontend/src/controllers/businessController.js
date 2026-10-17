@@ -31,6 +31,10 @@ export const businessController = {
     }
   },
 
+  loadBusinesses(customFilters = {}) {
+    return this.searchBusinesses(customFilters);
+  },
+
   searchBusinesses(customFilters = {}) {
     store.dispatch(setLoading(true));
     try {

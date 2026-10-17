@@ -1,5 +1,5 @@
 /**
- * HACKVIBE Backend Express Application Server
+ * AUroRA Backend Express Application Server
  * REST API for Local Services Discovery & Booking Platform
  */
 
@@ -39,7 +39,7 @@ app.use(
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     status: 'ok',
-    platform: 'HACKVIBE Local Services Platform',
+    platform: 'AUroRA Local Services Platform',
     timestamp: new Date().toISOString(),
   });
 });
@@ -240,11 +240,11 @@ const startServer = async () => {
   try {
     await connectDB();
     const server = app.listen(config.port, () => {
-      console.log(`[HACKVIBE Server] Running on http://localhost:${config.port} in ${config.nodeEnv} mode`);
+      console.log(`[AUroRA Server] Running on http://localhost:${config.port} in ${config.nodeEnv} mode`);
     });
     return server;
   } catch (error) {
-    console.error('[HACKVIBE Server] Startup failed:', error.message);
+    console.error('[AUroRA Server] Startup failed:', error.message);
   }
 };
 
