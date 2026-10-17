@@ -5,7 +5,8 @@
   "type": "module",
   "main": "schemas/index.js",
   "scripts": {
-    "seed": "node seeds/seed.js"
+    "seed": "node seeds/seed.js",
+    "inspect": "node inspect.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

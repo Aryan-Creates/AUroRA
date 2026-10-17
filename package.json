@@ -17,6 +17,7 @@
     "dev:backend": "npm --prefix backend run dev",
     "start:backend": "npm --prefix backend start",
     "seed:backend": "npm --prefix backend run seed",
-    "seed:database": "npm --prefix database run seed"
+    "seed:database": "npm --prefix database run seed",
+    "db:inspect": "node database/inspect.js"
   }
 }
