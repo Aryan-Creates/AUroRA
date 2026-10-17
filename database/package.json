@@ -1,0 +1,15 @@
+{
+  "name": "aurora-database",
+  "version": "1.0.0",
+  "description": "MongoDB Mongoose Schemas, Seeds, Fixtures and Database Management for AUroRA",
+  "type": "module",
+  "main": "schemas/index.js",
+  "scripts": {
+    "seed": "node seeds/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.8.4"
+  }
+}
